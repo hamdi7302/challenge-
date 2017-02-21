@@ -1,0 +1,11 @@
+<h1>Bienvenue</h1>
+<%@variable=42%>
+<p>vaiable : <%=@variable%>.</p>
+<%if @variable == 42 %>
+  bien !!
+<%else%>
+  desolé!!
+<%end%>
+<%@variable.times do |i|%>
+<%= i %>
+<%end%>
